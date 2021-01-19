@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Irina Kirichenko](https://up.htmlacademy.ru/htmlcss/30/user/1671865).
-* Наставник: `Неизвестно`.
+* Наставник: `[Оксана Вайнруб](https://htmlacademy.ru/profile/id166797)`.
 
 ---
 
