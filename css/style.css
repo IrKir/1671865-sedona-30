@@ -1,0 +1,27 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-extra-gray: #666666;
+  --basic-dark-gray: #888888;
+  --basic-gray: #A9A9A9;
+  --basic-light-gray: #CACACA;
+  --basic-neutral: #EEEEEE;
+  --basic-light: #F2F2F2;
+  --basic-white: #ffffff;
+
+  --basic-extra-brown: #503E33;
+  --basic-dark-brown: #604E43;
+  --basic-brown: #766357;
+  --basic-light-brown: #766458;
+
+  --basic-extra-blue: #5496BD;
+  --basic-dark-blue: #669EC0;
+  --basic-blue: #81B3D2;
+  --basic-light-blue: #81B3D3;
+
+  --check-block: #6A6A6A;
+  --slider: #ABABAB;
+  --logo-active: #231F20;
+}
