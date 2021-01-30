@@ -8,7 +8,8 @@
   --basic-gray: #A9A9A9;
   --basic-light-gray: #CACACA;
   --basic-neutral: #EEEEEE;
-  --basic-light: #F2F2F2;
+  --basic-light: #EBEBEB;
+  --basic-extra-light: #F2F2F2;
   --basic-white: #ffffff;
 
   --basic-extra-brown: #503E33;
@@ -23,5 +24,251 @@
 
   --check-block: #6A6A6A;
   --slider: #ABABAB;
-  --logo-active: #231F20;
+  --border-focus: #E5E5E5;
+
+  --logo-rest: #231F20;
+  --logo-push: #BDBBBC;
+
+  --box-shadow-main: rgba(0, 1, 1, 0.2);
+  --box-shadow:  rgba(0, 1, 1, 0.15);
+
+}
+
+/* Global */
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--basic-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-extra-light);
+}
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px var(--box-shadow-main);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.invisible {
+    visibility: hidden;
+    font-size: 1px;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+/* Main navigation */
+
+.main-navigation {
+  font-weight: bold;
+  line-height: 26px;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+}
+.site-navigation a:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* Invitation */
+
+.invitation {
+  width: 1200px;
+  height: 509px;
+  background:
+  url(/img/welcome.png) no-repeat 50% 50%,
+  url(/img/background/background-welcome.jpg);
+}
+
+/*  Slogan */
+
+.slogan {
+  width: 1200px;
+  height: 216px;
+  line-height: 26px;
+  text-align: center;
+}
+.slogan-town {
+  width: 470px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-black);
+  margin: 0 auto;
+  margin-top: 43px;
+}
+.slogan-cause {
+  margin-bottom: 51px;
+  line-height: 26px;
+}
+
+/* Description */
+
+.description {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.description-list, .advertising-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.description-item:first-of-type,
+.description-item:nth-of-type(2)  {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+.advertising-list {
+  background-color: var(--basic-white);
+  color: var(--basic-dark);
+}
+.advertising-list h4,
+.advantages h3 {
+  color: var(--basic-black);
+}
+.advantages {
+  background-color: var(--basic-neutral)
+}
+
+
+/* Offer */
+
+.offer {
+  text-align: center;
+}
+.offer-interest {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+.offer-indicate {
+  line-height: 24px;
+}
+
+
+/* Map */
+
+.map {
+  width: 1199px;
+  height: 594px;
+  background: url(/img/background/map.png) no-repeat;
+}
+
+
+/* Footer */
+
+.footer-phone,
+.footer-phone a {
+  color: inherit;
+  font-size: 21px;
+  line-height: 26px;
+}
+.footer-social ul {
+  list-style: none;
+}
+.footer-social a {
+  background: var(--basic-blue);
+}
+
+
+/* Form */
+
+.indicate {
+  width: 568px;
+  height: 481px;
+  box-shadow: 0px 7px 15px var(--box-shadow);
+  text-align: center;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+
+/* Button */
+
+.button {
+  background: var(--basic-blue);
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-white);
+}
+.button-find {
+  width: 458px;
+  height: 58px;
+}
+.button-find:hover,
+.button-find:focus,
+.social-button:hover,
+.social-button:focus  {
+  background-color: var(--basic-dark-blue);
+}
+.button-find:active,
+.social-find:active {
+  background-color: var(--basic-extra-blue);
+}
+.indicate-close {
+  display: block;
+  width: 568px;
+  height: 86px;
+  text-align: center;
+  background-color: var(--basic-brown);
+}
+.indicate-close:hover,
+.indicate-close:focus {
+  background-color: var(--basic-dark-brown);
+}
+.indicate-close:active {
+  background-color: var(--basic-extra-brown);
+}
+
+.logo-academy:hover,
+.logo-academy:focus {
+  fill: var(--basic-dark-blue);
+}
+.logo-academy:active {
+  fill: var(--logo-push);
+}
+.indicate-form input[type="date"],
+.indicate-form input[type="number"] {
+  background: var(--basic-extra-light);
+  font-weight: bold;
+  border: none;
+}
+.indicate-form input:hover {
+  background: var(--basic-light);
+}
+.indicate-form input:focus {
+  background: var(--basic-white);
+  border: 2px solid var(--border-focus);
+}
+.indicate-calendar:hover,
+.indicate-calendar:focus {
+  fill: var(--basic-black);
+}
+.indicate-calendar:active {
+  fill: var(--basic-blue);
 }
