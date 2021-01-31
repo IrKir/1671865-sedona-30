@@ -28,8 +28,9 @@
   --logo-rest: #231F20;
   --logo-push: #BDBBBC;
 
-  --box-shadow-main: rgba(0, 1, 1, 0.2);
-  --box-shadow:  rgba(0, 1, 1, 0.15);
+  --box-shadow-main: rgba(0, 1, 1, .2);
+  --box-shadow:  rgba(0, 1, 1, .15);
+  --opacity-button: rgba(255, 255, 255, .3);
 
 }
 
@@ -227,6 +228,7 @@ img {
 .button-find:active,
 .social-find:active {
   background-color: var(--basic-extra-blue);
+  color: var(--opacity-button);
 }
 .indicate-close {
   display: block;
@@ -241,6 +243,7 @@ img {
 }
 .indicate-close:active {
   background-color: var(--basic-extra-brown);
+  color: var(--opacity-button);
 }
 
 .logo-academy:hover,
@@ -261,11 +264,13 @@ img {
 }
 .indicate-form input:focus {
   background: var(--basic-white);
-  border: 2px solid var(--border-focus);
+  border: 2px solid var(--opacity-button);
+  color: var(--opacity-button);
 }
 .indicate-calendar:hover,
 .indicate-calendar:focus {
   fill: var(--basic-black);
+
 }
 .indicate-calendar:active {
   fill: var(--basic-blue);
