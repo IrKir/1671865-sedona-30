@@ -261,6 +261,9 @@ img {
 .sorting h3 {
   color: var(--basic-font);
 }
+.sorting-link-active {
+  color: var(--accent);
+}
 .sorting-link {
   color: var(--basic-font);
   mix-blend-mode: normal;
