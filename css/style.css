@@ -261,9 +261,6 @@ img {
 .sorting h3 {
   color: var(--basic-font);
 }
-.sorting-link-active {
-  color: var(--accent);
-}
 .sorting-link {
   color: var(--basic-font);
   mix-blend-mode: normal;
@@ -290,6 +287,9 @@ img {
 }
 .sorting-link-down:active,
 .sorting-link-up:active {
+  color: var(--accent);
+}
+.sorting-link-active {
   color: var(--accent);
 }
 
