@@ -283,11 +283,11 @@ img {
 .sorting-link-down:focus,
 .sorting-link-up:hover,
 .sorting-link-up:focus {
-  color: var(--accent);
+  color: var(--basic-font);
 }
 .sorting-link-down:active,
 .sorting-link-up:active {
-  color: var(--basic-font);
+  color: var(--accent);
 }
 
 /* Result */
