@@ -299,7 +299,7 @@ img {
   text-align: center;
   margin: 0;
   padding-top: 33px;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
   background-color: var(--additional-accent);
 }
 
@@ -320,7 +320,7 @@ img {
 }
 
 .button.button-find {
-  margin-top: 21px;
+  margin-top: 25px;
 }
 .indicate-date {
   background: var(--peripheral-additional-accent);
