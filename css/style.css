@@ -86,32 +86,27 @@ img {
   height: 100%;
 }
 
-
-/* Main header */
-
-.main-header {
-  margin-bottom: 40px;
-  outline: 5px solid rgba(0, 100, 0, 0.7);
-  outline-offset: -5px;
-}
-
 /* Main navigation */
 
 .main-navigation {
+  position: relative;
   display: grid;
   font-weight: bold;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* Logo */
 
 .main-header-logo {
-  order: 1;
-  justify-self: center;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  margin-left: 531px;
 }
+
+/* Grid */
 
 .main-navigation-wrapper {
   display: grid;
@@ -119,13 +114,21 @@ img {
   height: 56px;
 }
 
+/* Flex */
+
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
-  list-style: none;
+  margin: 0 72px;
 }
+.site-navigation li {
+  width: 98px;
+}
+
 .site-navigation a {
   color: var(--second-basic);
 }
@@ -143,8 +146,9 @@ img {
   width: 1200px;
   height: 509px;
   background:
-  url(../img/welcome.png) no-repeat 50% 50%,
-  var(--accent) url(../img/background/background-welcome.jpg) no-repeat 0 0;
+  url(../img/polygon.svg) no-repeat 0 100%,
+  url(../img/welcome.svg) no-repeat 50% 50%,
+  var(--opacity-basic) url(../img/background/background-welcome.jpg) no-repeat 0 0;
 }
 
 /*  Slogan */
@@ -172,32 +176,31 @@ img {
 /* Description */
 
 .description {
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.description-header {
-  margin-top: 47px;
-  margin-bottom: 25px;
-}
-.description-item-text {
-  margin-bottom: 54px;
-}
 /* Grid */
 
 .description-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 256px 256px 256px 256px;
+  grid-template-rows: 256px 330px 256px 256px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* Flex */
+
 .description-item {
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .description-item:first-of-type,
@@ -205,8 +208,16 @@ img {
   background-color: var(--accent);
   color: var(--basic-main);
 }
+
 .description-list h4,
 .advantages h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
   color: var(--second-basic);
 }
 .advantages {
@@ -219,6 +230,30 @@ img {
 .description-item:nth-child(6) {
   grid-column: 1 / 3 ;
   grid-row: 3 / 4;
+}
+.housing::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 72px;
+  background: url(../img/icons/icon-house.svg) no-repeat 0 0;
+}
+.food::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 70px;
+  background: url(../img/icons/icon-burger.svg) no-repeat 0 0;
+}
+.souvenirs::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 77px;
+  background: url(../img/icons/icon-souvenirs.svg) no-repeat 0 0;
 }
 
 
@@ -235,11 +270,76 @@ img {
   color: var(--second-basic);
   margin-top: 56px;
 }
-.offer-indicate {
-  width: 435px;
-  height: 95px;
-  line-height: 24px;
-  margin: 0 auto;
+
+/* Form */
+
+.indicate {
+  width: 568px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: var(--basic-main);
+  box-shadow: 0px 7px 15px var(--box-shadow-form);
+}
+
+
+/* Flex */
+
+.indicate-form {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.button.indicate-close {
+  display: block;
+  text-align: center;
+  height: 86px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  background-color: var(--additional-accent);
+}
+.indicate-form {
+  height: 395px;
+  margin: 0;
+  padding: 0;
+}
+.indicale-container {
+  width: 458px;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  padding: 0;
+}
+
+.indicate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 29px;
+}
+.button.button-find {
+  margin: 0;
+  padding: 0;
+}
+
+.indicate-close:hover,
+.indicate-close:focus,
+.button-reservation:hover,
+.button-reservation:focus {
+  background-color: var(--additional-accent-dark);
+}
+.indicate-close:active,
+.button-reservation:active {
+  background-color: var(--additional-accent-extra);
+  color: var(--opacity-basic);
 }
 
 
@@ -260,8 +360,8 @@ img {
   text-align: center;
   vertical-align: middle;
   background: var(--opacity-background);
-  outline: 5px solid rgba(100, 0, 0, 0.7);
-  outline-offset: -5px;
+  height: 120px;
+  margin-top: -120px;
 }
 
 .footer-phone,
@@ -272,15 +372,44 @@ img {
   font-size: 21px;
   line-height: 26px;
 }
+
 .footer-social {
   width: 150px;
   height: 49px;
-  justify-self: center;
-  text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
-
 }
+
+/* Flex */
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  margin: auto;
+}
+.footer-copyright {
+  display: flex;
+  width: 197px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .footer-social ul {
   list-style: none;
 }
@@ -289,22 +418,11 @@ img {
 }
 
 
-/* Form */
-
-.indicate {
-  width: 568px;
-  height: 481px;
-  box-shadow: 0px 7px 15px var(--box-shadow-form);
-  text-align: center;
-  line-height: 26px;
-  font-weight: bold;
-}
-
 /*==============================================================*/
 
 /* Catalog */
 
-.page {
+.blank {
   color: var(--additional-accent);
 }
 
@@ -332,6 +450,7 @@ img {
 .selection-prise {
   grid-column: 2 / -1;
 }
+
 
 /* Selection, Sorting */
 
@@ -364,11 +483,29 @@ img {
   color: var(--check-block);
 }
 
+/* Flex */
+
 .sorting {
-  display:inline-block;
+  display:flex;
+  align-items: center;
   height: 87px;
 }
-.sorting h2,
+.sorting span:nth-child(2) {
+  margin-right: 46px;
+}
+.sorting h3 {
+  margin-right: 40px;
+}
+.sorting-list {
+  display:flex;
+  align-items: center;
+}
+.sorting-link {
+  margin-right: 32px;
+}
+/* .sorting-link:nth-of-type(4) {
+  margin: 0;
+}*/
 .sorting p {
   font-weight: bold;
   font-size: 21px;
@@ -454,18 +591,16 @@ img {
 .button-find {
   width: 458px;
   height: 58px;
+  margin: 0 auto;
 }
 .social-button {
   position: relative;
   width: 46px;
   height: 48px;
-  text-align: center;
-  display: inline-block;
-}
-.social-button svg{
-  position: absolute;
-  top: 30%;
-  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
 }
 
 .button-find:hover,
@@ -485,24 +620,8 @@ img {
   background-color: var(--accent-enhanced-tone);
   fill: var(--opacity-basic);
 }
-.indicate-close {
-  display: block;
-  width: 568px;
-  height: 86px;
-  text-align: center;
-  background-color: var(--additional-accent);
-}
-.indicate-close:hover,
-.indicate-close:focus,
-.button-reservation:hover,
-.button-reservation:focus {
-  background-color: var(--additional-accent-dark);
-}
-.indicate-close:active,
-.button-reservation:active {
-  background-color: var(--additional-accent-extra);
-  color: var(--opacity-basic);
-}
+
+
 
 .logo-academy:hover,
 .logo-academy:focus {
@@ -511,11 +630,19 @@ img {
 .logo-academy:active {
   fill: var(--logo-push);
 }
-.indicate-form input[type="date"],
-.indicate-form input[type="number"] {
+.indicate-date {
   background: var(--peripheral-additional-accent);
   font-weight: bold;
   border: none;
+  width: 346px;
+  height: 38px;
+}
+.input-people {
+  width: 114px;
+  height: 38px;
+  border: none;
+  outline: none;
+  background: var(--peripheral-additional-accent);
 }
 .indicate-form input:hover {
   background: var(--peripheral-accent);
@@ -528,7 +655,6 @@ img {
 .indicate-calendar:hover,
 .indicate-calendar:focus {
   fill: var(--second-basic);
-
 }
 .indicate-calendar:active {
   fill: var(--accent);
