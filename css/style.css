@@ -278,8 +278,6 @@ img {
   margin: 0;
   padding: 0;
   text-align: center;
-  line-height: 26px;
-  font-weight: bold;
   background-color: var(--basic-main);
   box-shadow: 0px 7px 15px var(--box-shadow-form);
 }
@@ -290,6 +288,7 @@ img {
   display: flex;
   flex-direction: column;
   vertical-align: center;
+  height: 395px;
   margin: 0;
   padding: 0;
 }
@@ -299,20 +298,15 @@ img {
   justify-content: center;
   text-align: center;
   margin: 0;
-  padding: 30px;
+  padding: 34px;
   background-color: var(--additional-accent);
 }
-.indicate-form {
-  height: 395px;
-  margin: 0;
-  padding: 0;
-}
+
 .indicate-container {
   width: 458px;
-  margin: 0;
+  margin: 55px auto 0;
   padding: 0;
-  margin: auto;
-  padding: 0;
+  font-weight: bold;
 }
 
 .indicate-item {
@@ -323,21 +317,23 @@ img {
   padding: 0;
   padding-bottom: 29px;
 }
+
 .button.button-find {
-  margin-bottom: 55px;
+  margin-top: 22px;
 }
 .indicate-date {
   background: var(--peripheral-additional-accent);
-  font-weight: bold;
   border: none;
   width: 346px;
-  padding: 9px 12px;
+  font-weight: bold;
+  padding: 9px 13px;
   box-sizing: border-box;
 }
 .input-people {
   width: 114px;
   border: none;
   outline: none;
+  font-weight: bold;
   padding: 9px 12px;
   box-sizing: border-box;
   background: var(--peripheral-additional-accent);
