@@ -284,7 +284,6 @@ img {
   box-shadow: 0px 7px 15px var(--box-shadow-form);
 }
 
-
 /* Flex */
 
 .indicate-form {
@@ -296,12 +295,11 @@ img {
 }
 
 .button.indicate-close {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  height: 86px;
   margin: 0;
-  padding: 0;
-  padding-top: 30px;
+  padding: 30px;
   background-color: var(--additional-accent);
 }
 .indicate-form {
@@ -309,7 +307,7 @@ img {
   margin: 0;
   padding: 0;
 }
-.indicale-container {
+.indicate-container {
   width: 458px;
   margin: 0;
   padding: 0;
@@ -326,10 +324,39 @@ img {
   padding-bottom: 29px;
 }
 .button.button-find {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 55px;
 }
-
+.indicate-date {
+  background: var(--peripheral-additional-accent);
+  font-weight: bold;
+  border: none;
+  width: 346px;
+  padding: 9px 12px;
+  box-sizing: border-box;
+}
+.input-people {
+  width: 114px;
+  border: none;
+  outline: none;
+  padding: 9px 12px;
+  box-sizing: border-box;
+  background: var(--peripheral-additional-accent);
+}
+.indicate-form input:hover {
+  background: var(--peripheral-accent);
+}
+.indicate-form input:focus {
+  background: var(--basic-main);
+  outline: 2px solid var(--peripheral);
+  color: var(--opacity-basic);
+}
+.indicate-calendar:hover,
+.indicate-calendar:focus {
+  fill: var(--second-basic);
+}
+.indicate-calendar:active {
+  fill: var(--accent);
+}
 .indicate-close:hover,
 .indicate-close:focus,
 .button-reservation:hover,
@@ -621,8 +648,6 @@ img {
   fill: var(--opacity-basic);
 }
 
-
-
 .logo-academy:hover,
 .logo-academy:focus {
   fill: var(--accent-additional-tone);
@@ -630,35 +655,7 @@ img {
 .logo-academy:active {
   fill: var(--logo-push);
 }
-.indicate-date {
-  background: var(--peripheral-additional-accent);
-  font-weight: bold;
-  border: none;
-  width: 346px;
-  height: 38px;
-}
-.input-people {
-  width: 114px;
-  height: 38px;
-  border: none;
-  outline: none;
-  background: var(--peripheral-additional-accent);
-}
-.indicate-form input:hover {
-  background: var(--peripheral-accent);
-}
-.indicate-form input:focus {
-  background: var(--basic-main);
-  outline: 2px solid var(--peripheral);
-  color: var(--opacity-basic);
-}
-.indicate-calendar:hover,
-.indicate-calendar:focus {
-  fill: var(--second-basic);
-}
-.indicate-calendar:active {
-  fill: var(--accent);
-}
+
 .button-selection {
   width: 137px;
   height: 36px;
