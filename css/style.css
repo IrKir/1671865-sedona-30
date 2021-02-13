@@ -355,6 +355,9 @@ input[type="text"]::placeholder {
   top: 62px;
   right: 64px;
 }
+.indicate-item-link:hover path {
+
+}
 .indicate-link {
   top: 129px;
 }
@@ -394,12 +397,12 @@ input[type="text"]::placeholder {
 }
 .indicate-item-color:hover,
 .indicate-item-color:focus,
-.indicate-calendar:hover,
-.indicate-calendar:focus {
+.indicate-item-link:hover path,
+.indicate-item-link:focus path {
   fill: var(--second-basic);
 }
 .indicate-item-color:active,
-.indicate-calendar:active {
+.indicate-item-link:active path {
   outline: 2px solid var(--peripheral-additional-accent);
   border: 2px solid var(--peripheral-additional-accent);
   fill: var(--accent);
@@ -766,16 +769,15 @@ input[type="text"]::placeholder {
   background-color: var(--accent-enhanced-tone);
   color: var(--opacity-basic);
 }
-.social-button:active path{
-
+.social-button:active path {
   fill: var(--opacity-basic);
 }
 
-.logo-academy:hover,
-.logo-academy:focus {
+.logo-academy:hover path,
+.logo-academy:focus path {
   fill: var(--accent-additional-tone);
 }
-.logo-academy:active {
+.logo-academy:active path {
   fill: var(--logo-push);
 }
 .button-selection {
