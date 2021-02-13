@@ -404,17 +404,7 @@ input[type="text"]::placeholder {
   border: 2px solid var(--peripheral-additional-accent);
   fill: var(--accent);
 }
-.indicate-close:hover,
-.indicate-close:focus,
-.button-reservation:hover,
-.button-reservation:focus {
-  background-color: var(--additional-accent-dark);
-}
-.indicate-close:active,
-.button-reservation:active {
-  background-color: var(--additional-accent-extra);
-  color: var(--opacity-basic);
-}
+
 .button.indicate-close {
   display: flex;
   flex-wrap: wrap;
@@ -829,4 +819,15 @@ input[type="text"]::placeholder {
 }
 .result-item-link:active {
   color: var(--opacity-additional);
+}
+.indicate-close:hover,
+.indicate-close:focus,
+.button-reservation:hover,
+.button-reservation:focus {
+  background-color: var(--additional-accent-dark);
+}
+.indicate-close:active,
+.button-reservation:active {
+  background-color: var(--additional-accent-extra);
+  color: var(--opacity-basic);
 }
