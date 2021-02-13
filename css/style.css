@@ -444,7 +444,6 @@ input[type="text"]::placeholder {
   left: 167px;
 }
 
-
 /* Map */
 
 .map {
@@ -564,10 +563,70 @@ input[type="text"]::placeholder {
   width: 254px;
   margin: 0;
   padding: 0;
+  border: none;
 }
+.selection-option {
+
+  padding-left: 39px;
+}
+.selection-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
 .selection-option,
 .selection-form legend {
   padding-bottom: 25px;
+}
+.selection-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  display:block;
+  left: -39px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background: url(../img/icons/checkbox-off.svg) 0 0 no-repeat;
+}
+.selection-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -39px;
+  width: 27px;
+  height: 23px;
+  background: url(../img/icons/checkbox-on.svg) 0 0 no-repeat;
+}
+.selection-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: -39px;
+  width: 27px;
+  height: 23px;
+  background: url(../img/icons/checkbox-off.svg) 0 0 no-repeat;
+}
+.selection-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background: url(../img/icons/checkbox-off-disabled.svg) 0 0 no-repeat;
+}
+.selection-input-checkbox:checked:disabled {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background: url(../img/icons/checkbox-on-disabled.svg) 0 0 no-repeat;
 }
 .selection-option:last-child {
   padding-bottom: 0;
@@ -724,7 +783,20 @@ input[type="text"]::placeholder {
   padding: 0;
 }
 .result-star {
-  color: var(--accent);
+  display: block;
+  background: url(../img/icons/star.svg);
+}
+.first {
+  width: 77px;
+  height: 18px;
+}
+.second {
+  width: 59px;
+  height: 19px;
+}
+.third {
+  width: 40px;
+  height: 19px;
 }
 .result-rating {
   display: flex;

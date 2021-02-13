@@ -32,16 +32,16 @@
                 <legend>Инфраструктура:</legend>
                 <ul>
                   <li class="selection-option selection-checkbox">
-                    <input class="selection-input-checkbox selection-input" type="checkbox" name="pool" id="filter-pool" checked>
+                    <input class="selection-input-checkbox  visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
                     <label for="filter-pool">Бассейн</label>
                   </li>
                   <li  class="selection-option selection-checkbox">
-                    <input class="selection-input-checkbox selection-input" type="checkbox" name="parking" id="filter-parking">
+                    <input class="selection-input-checkbox selection-input visually-hidden" type="checkbox" name="parking" id="filter-parking">
                     <label for="filter-parking">Парковка</label>
                   </li>
                   <li class="selection-option selection-checkbox">
-                    <input class="selection-input-checkbox selection-input" type="checkbox" name="wifi" id="filter-wifi">
-                    <label for="filter-wifi">Wi-fi</label>"
+                    <input class="selection-input-checkbox selection-input visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
+                    <label for="filter-wifi">Wi-fi</label>
                   </li>
                 </ul>
               </fieldset>
@@ -49,24 +49,41 @@
                 <legend>Тип жилья:</legend>
                 <ul>
                   <li class="selection-option selection-checkbox">
-                    <input class="selection-input-checkbox selection-input" type="checkbox" name="hotel" id="filtr=hotel" checked>
+                    <input class="selection-input-checkbox selection-input visually-hidden" type="checkbox" name="hotel" id="filtr=hotel" checked disabled>
                     <label for="filtr=hotel">Гостиница</label>
                   </li>
                   <li class="selection-option selection-checkbox">
-                    <input class="selection-input-checkbox selection-input" type="checkbox" name="motel" id="filtr-motel" checked>
+                    <input class="selection-input-checkbox selection-input visually-hidden" type="checkbox" name="motel" id="filtr-motel" checked>
                     <label for="filtr-motel">Мотель</label>
                   </li>
                   <li class="selection-option selection-checkbox">
-                    <input class="selection-input-checkbox selection-input" type="checkbox" name="apartments" id="filtr-apartments" checked>
+                    <input class="selection-input-checkbox selection-input visually-hidden" type="checkbox" name="apartments" id="filtr-apartments" checked>
                     <label for="filtr-apartments">Апартаменты</label>
                   </li>
                 </ul>
               </fieldset>
-              <div class="selection-prise">
-                <label for="filter-cost">Стоимость в сутки (Р):</label>
-                <input class="selection-prise-input" id="filter-cost" type="number" name="cost" min="0" max="3000">
+              <fieldset class="filter-item">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="15000">
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
                 <button type="submit" class="button button-selection">Показать</button>
-              </div>
+              </fieldset>
             </form>
           </section>
           <section class="sorting">
@@ -103,8 +120,8 @@
                   </p>
                 </div>
                 <div class="result-star-rating">
-                  <span class="result-star">&#9733;&#9733;&#9733;&#9733;</span>
-                  <span class="result-rating">Рейтинг: 8,5</span>
+                  <div class="result-star first"></div>
+                  <div class="result-rating">Рейтинг: 8,5</div>
                 </div>
               </li>
               <li class="result-item">
@@ -121,7 +138,7 @@
                   </p>
                 </div>
                 <div class="result-star-rating">
-                  <span class="result-star">&#9733;&#9733;&#9733;</span>
+                  <span class="result-star second"></span>
                   <span class="result-rating">Рейтинг: 8,9</span>
                 </div>
               </li>
@@ -139,8 +156,9 @@
                   </p>
                 </div>
                 <div class="result-star-rating">
-                <span class="result-star">&#9733;&#9733;</span>
-                <span class="result-rating">Рейтинг: 9,2</span>
+                <div class="result-star third"></div>
+                <div class="result-rating">Рейтинг: 9,2</div>
+                </div>
               </li>
             </ul>
           </section>
