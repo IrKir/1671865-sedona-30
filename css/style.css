@@ -619,7 +619,7 @@ input[type="text"]::placeholder {
   height: 23px;
   background: url(../img/icons/checkbox-off-disabled.svg) 0 0 no-repeat;
 }
-.selection-input-checkbox:checked:disabled {
+.selection-input-checkbox:checked:disabled + label::after{
   content: "";
   position: absolute;
   left: -39px;
