@@ -27,6 +27,7 @@
   --peripheral-additional-accent: #F2F2F2;
   --peripheral-additional: #CACACA;
   --petty-bullshit: #ABABAB;
+  --petty-bullshit-opacity: rgba(171, 171, 171, 0.3);
   --peripheral: #E5E5E5;
 
 
@@ -549,10 +550,11 @@ input[type="text"]::placeholder {
   margin: 0 72px;
   padding: 27px 0 29px 0;
 }
-.selection-form legend,
-.selection-prise label {
+.selection-form legend {
   font-size: 16px;
+  line-height: 21px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .selection ul {
   list-style: none;
@@ -566,7 +568,6 @@ input[type="text"]::placeholder {
   border: none;
 }
 .selection-option {
-
   padding-left: 39px;
 }
 .selection-option label {
@@ -575,7 +576,6 @@ input[type="text"]::placeholder {
   cursor: pointer;
   user-select: none;
 }
-
 .selection-option,
 .selection-form legend {
   padding-bottom: 25px;
@@ -631,13 +631,14 @@ input[type="text"]::placeholder {
 .selection-option:last-child {
   padding-bottom: 0;
 }
-.selection-prise {
+.filter-item {
   display: flex;
   width: 320px;
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  border: none;
   margin-left: auto;
 }
 .button-selection {
@@ -653,6 +654,79 @@ input[type="text"]::placeholder {
 .selection-input-checkbox:disabled {
   color: var(--check-block);
 }
+
+/* Filter */
+
+.filter-item legend {
+  padding: 0;
+  margin-bottom: 11px;
+}
+.range-filter {
+  width: 317px;
+}
+.range-controls {
+  position: relative;
+  margin-top: 12px;
+  margin-left: 4px;
+  padding-top: 9px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: var(--opacity-basic);
+}
+.range-controls .bar {
+  width: 248px;
+  height: 2px;
+  background: var(--basic-main);
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-main);
+  background-color: var(--petty-bullshit);
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 var(--petty-bullshit-opacity);
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 0px;
+}
+.range-controls .toggle-max {
+  left: 245px;
+}
+.toggle:hover {
+  transform: scale(1.2);
+}
+.price-controls {
+  text-align: center;
+  border: 2px solid var(--basic-main);
+}
+.price-controls input {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  width: 30px;
+  margin: 6px 0;
+  background: none;
+  border: none;
+  color: var(--basic-main);
+}
+.min-prise input {
+  padding-right: 30px;
+  border-right: 2px solid var(--basic-main);
+}
+.max-price  {
+  padding-left: 50px;
+
+}
+
+
+
+
 
 /* Sorting  */
 
@@ -783,24 +857,18 @@ input[type="text"]::placeholder {
   padding: 0;
 }
 .result-star {
-  width: 77px;
-  height: 18px;
-  border: 1px solid red;
+  height: 17px;
   background-image: url(../img/icons/star.svg);
-
 }
-/*.first {
-  width: 77px;
-  height: 18px;
+.star-hotel {
+  width: 76px;
 }
-.second {
-  width: 59px;
-  height: 18px;
+.star-motel {
+  width: 57px;
 }
-.third {
-  width: 40px;
-  height: 18px;
-}*/
+.star-apartments {
+  width: 38px;
+}
 .result-rating {
   display: flex;
   justify-content: center;
@@ -866,6 +934,11 @@ input[type="text"]::placeholder {
   border: 2px solid var(--basic-main);
   border-radius: 2px;
   background-color: transparent;
+}
+.button-selection:hover {
+  color: var(--second-basic);
+  background-color: var(--basic-main);
+
 }
 .button-result {
   display: flex;

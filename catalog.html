@@ -63,27 +63,27 @@
                 </ul>
               </fieldset>
               <fieldset class="filter-item">
-                <legend>Стоимость:</legend>
+                <legend>Стоимость в сутки (Р):</legend>
                 <div class="range-filter">
+                  <div class="price-controls">
+                    <label class="min-prise">От
+                      <input type="text" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">до
+                      <input type="text" name="max-price" value="3000">
+                    </label>
+
+                  </div>
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
-                  </div>
-                  <div class="price-controls">
-                    <label class="min-price">
-                      от <input type="number" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">
-                      до <input type="number" name="max-price" value="15000">
-                    </label>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                 </div>
-            </fieldset>
                 <button type="submit" class="button button-selection">Показать</button>
-              </fieldset>
+            </fieldset>
             </form>
           </section>
           <section class="sorting">
@@ -120,7 +120,7 @@
                   </p>
                 </div>
                 <div class="result-star-rating">
-                  <div class="result-star"></div>
+                  <div class="result-star star-hotel"><p class="visually-hidden">четыре звезды</p></div>
                   <div class="result-rating">Рейтинг: 8,5</div>
                 </div>
               </li>
@@ -138,8 +138,8 @@
                   </p>
                 </div>
                 <div class="result-star-rating">
-                  <span class="result-star"></span>
-                  <span class="result-rating">Рейтинг: 8,9</span>
+                  <div class="result-star star-motel"><p class="visually-hidden">три звезды</p></div>
+                  <div class="result-rating">Рейтинг: 8,9</div>
                 </div>
               </li>
               <li class="result-item">
@@ -147,7 +147,7 @@
                 <div class="result-link-hotel">
                   <a class="result-item-link" href="#">Villas at Poco Diablo</a>
                   <div class="result-item-hotel">
-                    <p>Аппартаменты</p>
+                    <p>Апартаменты</p>
                     <p>От 2000 Р.</p>
                   </div>
                   <p class="result-buttons">
@@ -156,7 +156,7 @@
                   </p>
                 </div>
                 <div class="result-star-rating">
-                <div class="result-star"></div>
+                <div class="result-star star-apartments"><p class="visually-hidden">две звезды</p></div>
                 <div class="result-rating">Рейтинг: 9,2</div>
                 </div>
               </li>
