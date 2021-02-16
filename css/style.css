@@ -166,10 +166,21 @@ img {
 .invitation {
   width: 1200px;
   height: 509px;
-  background:
-  url(../img/polygon.svg) no-repeat 0 100%,
-  url(../img/welcome.svg) no-repeat 50% 50%,
-  var(--opacity-basic) url(../img/background/background-welcome.jpg) no-repeat 0 0;
+  background: var(--opacity-basic) url(../img/background/background-welcome.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.invitation-img {
+  display: block;
+  width: 456px;
+  height: 350px;
+  margin: 0 auto;
+  padding-top: 78px;
+}
+.invitation-svg {
+  display: block;
+  width: 1200px;
+  height: 57px;
+  margin-top: 24px;
 }
 
 /*  Slogan */
