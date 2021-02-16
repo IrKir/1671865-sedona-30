@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:wght@400;700&;display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="main-container">
@@ -28,7 +28,7 @@
         <h1 class="visually-hidden">HTML Academy: Седона</h1>
         <section class="invitation">
           <h2 class="visually-hidden">Приглашение в Седону</h2>
-          <img src="img/welcome.svg" alt="Приглашение в Седону"  width="466" height="350" class="invitation-img">
+          <img src="/img/welcome.svg" alt="Приглашение в Седону"  width="466" height="350" class="invitation-img">
           <svg class="invitation-svg" width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
             </svg>
@@ -40,37 +40,28 @@
         </section>
         <section class="description">
           <h2 class="visually-hidden">Описание Седоны</h2>
-          <img src="img/view-Sedona.jpg" width="800" height="256" alt="Фото города" class="img-town">
+          <section class="description-section">
+            <div class="description-item">
+              <p class="description-header">Настоящий<br>городок </p>
+              <p>&mdash; №1 &mdash;</p>
+              <p class="description-item-text">Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+            </div>
+            <img src="img/view-Sedona.jpg" width="800" height="256" alt="Фото города" class="img-town">
+            <div class="description-item housing">
+              <p class="description-header description-header-interest">Жильё</p>
+              <p class="description-item-text description-text-interest">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+            </div>
+            <div class="description-item food">
+              <p class="description-header description-header-interest">Еда</p>
+              <p class="description-item-text description-text-interest">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+            </div>
+            <div class="description-item souvenirs">
+              <p class="description-header description-header-interest">Сувениры</p>
+              <p class="description-item-text description-text-interest">Не только китайского, но и местного<br>производства!</p>
+            </div>
+          </section>
+          <section class="description-section">
           <img src="img/view-canyon.jpg" width ="800" height="256" alt="Фото местности" class="img-canyon">
-          <div class="description-item">
-            <p class="description-header">Настоящий<br>городок </p>
-            <p>&mdash; №1 &mdash;</p>
-            <p class="description-item-text">Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
-          </div>
-          <div class="description-item housing">
-            <p class="description-header description-header-interest">Жильё</p>
-            <p class="description-item-text description-text-interest">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-          </div>
-          <div class="description-item food">
-            <p class="description-header description-header-interest">Еда</p>
-            <p class="description-item-text description-text-interest">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
-          </div>
-          <div class="description-item souvenirs">
-            <p class="description-header description-header-interest">Сувениры</p>
-            <p class="description-item-text description-text-interest">Не только китайского, но и местного<br>производства!</p>
-          </div>
-          <div class="description-item housing">
-            <p class="description-header description-header-interest">Жильё</p>
-            <p class="description-item-text description-text-interest">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-          </div>
-          <div class="description-item food">
-            <p class="description-header description-header-interest">Еда</p>
-            <p class="description-item-text description-text-interest">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
-          </div>
-          <div class="description-item souvenirs">
-            <p class="description-header description-header-interest">Сувениры</p>
-            <p class="description-item-text description-text-interest">Не только китайского, но и местного<br>производства!</p>
-          </div>
           <div class="description-item description-item-color">
             <p class="description-header">Там есть<br>Мост дьявола</p>
             <p>&mdash; №2 &mdash;</p>
@@ -92,6 +83,7 @@
             <p class="description-item-text">большинство едет в гранд каньон<br>и толпится там</p>
           </div>
         </section>
+        </section>
         <section class="offer">
           <h2 class="visually-hidden">Предложение</h2>
           <p class="offer-interest">Заинтересовались?</p>
@@ -112,7 +104,7 @@
                   </a>
                 </p>
                 <p class="indicate-item">
-                  <label for="indicate-departure-date">Дата отъезда</label>
+                  <label for="indicate-departure-date">Дата выъезда</label>
                   <input id="indicate-departure-date" type="text" name="calendar" placeholder="4 июля 2017" class="indicate-date">
                   <a href="#" class="indicate-item-link indicate-link">
                     <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +140,7 @@
                   </button>
                 </p>
               </div>
-              <button type="submit" class="button button-find">Найти </button>
+              <button type="submit" class="button button-find">Найти</button>
             </form>
           </section>
         </section>
