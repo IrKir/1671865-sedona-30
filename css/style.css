@@ -200,60 +200,73 @@ img {
 
 /* Description */
 
-.description {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
 /* Grid */
 
-.description-list {
+.description {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 256px 330px 256px 256px;
-  list-style: none;
+  grid-template-rows: repeat(1, 1fr);
   margin: 0;
   padding: 0;
 }
-
-/* Flex */
-
 .description-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-.description-item:first-of-type,
-.description-item:nth-of-type(7)  {
-  background-color: var(--accent);
-  color: var(--basic-main);
-}
-.description-list h4,
-.advantages h3 {
-  margin: 0;
-  padding: 0;
-  margin-top: 28px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--second-basic);
-}
-.advantages {
-  background-color: var(--accent-neutral)
-}
-.description-item:nth-child(2) {
+.img-town {
   grid-column: 2 / -1 ;
   grid-row: 1 / 2;
 }
-.description-item:nth-child(6) {
+.img-canyon {
   grid-column: 1 / 3 ;
   grid-row: 3 / 4;
+}
+.description-header {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: 47px;
+  margin-bottom: 26px;
+}
+.description-item-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
+  margin-bottom: 54px;
+}
+.description-header-interest {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  color: var(--second-basic);
+}
+.description-text-interest {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 82px;
+  color: var(--third-basic);
+}
+.description-header-advantages {
+  color: var(--second-basic);
+}
+.description-item:first-of-type,
+.description-item:nth-of-type(5)  {
+  background-color: var(--accent);
+  color: var(--basic-main);
+}
+.advantages {
+  background-color: var(--accent-neutral)
 }
 .housing::before {
   content: "";
@@ -261,6 +274,7 @@ img {
   margin: 0 auto;
   width: 75px;
   height: 72px;
+  margin-top: 60px;
   background: url(../img/icons/icon-house.svg) no-repeat 0 0;
 }
 .food::before {
@@ -269,6 +283,7 @@ img {
   margin: 0 auto;
   width: 75px;
   height: 70px;
+  margin-top: 61px;
   background: url(../img/icons/icon-burger.svg) no-repeat 0 0;
 }
 .souvenirs::before {
@@ -277,6 +292,7 @@ img {
   margin: 0 auto;
   width: 64px;
   height: 77px;
+  margin-top: 55px;
   background: url(../img/icons/icon-souvenirs.svg) no-repeat 0 0;
 }
 
