@@ -170,7 +170,7 @@ img {
 .invitation {
   width: 1200px;
   height: 509px;
-  background: var(--opacity-basic) url(../img/background/background-welcome.jpg) no-repeat 0 0;
+  background: var(--accent-enhanced-tone) url(../img/background/background-welcome.jpg) no-repeat 0 0;
   background-size: cover;
 }
 .invitation-img {
