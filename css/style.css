@@ -160,6 +160,10 @@ img {
 .site-navigation a:active {
   color: var(--opacity-additional);
 }
+.blank {
+  color: var(--additional-accent);
+}
+
 
 /* Invitation */
 
@@ -449,7 +453,6 @@ input[type="text"]::placeholder {
   position: absolute;
   width: 30px;
   border: none;
-  outline: none;
   background: none;
   vertical-align: middle;
 }
@@ -549,6 +552,7 @@ input[type="text"]::placeholder {
 
 /* Grig */
 
+
 .selection {
   margin: 0;
   padding: 0;
@@ -610,6 +614,14 @@ input[type="text"]::placeholder {
   width: 23px;
   height: 23px;
   background: url(../img/icons/checkbox-off.svg) 0 0 no-repeat;
+}
+.selection-input:focus + label::before,
+.selection-input:focus + label::after {
+  outline: none;
+}
+.selection-input:focus-visible + label::after,
+.selection-input:focus-visible + label::before {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 .selection-input-checkbox:checked + label::after {
   content: "";
@@ -912,7 +924,12 @@ input[type="text"]::placeholder {
   font-weight: bold;
   font-size: 21px;
   color: var(--basic-main);
+}
+.btn:focus {
   outline: none;
+}
+.btn:focus-visible {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 .button-find {
   width: 458px;
@@ -953,7 +970,8 @@ input[type="text"]::placeholder {
   border-radius: 2px;
   background-color: transparent;
 }
-.button-selection:hover {
+.button-selection:hover,
+.button-selection:focus {
   color: var(--second-basic);
   background-color: var(--basic-main);
 }
