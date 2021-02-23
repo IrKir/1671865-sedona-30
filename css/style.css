@@ -343,23 +343,22 @@ img {
   left: 50%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   margin-left: -284px;
   text-align: center;
-  background-color: var(--basic-main);
-  box-shadow: 0px 7px 15px var(--box-shadow-form);
 }
 
 /* Flex */
 
 .indicate-form {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   vertical-align: center;
   margin: 0;
   padding: 0;
-  color: var( --second-basic);
+  background-color: var(--basic-main);
+  box-shadow: 0px 7px 15px var(--box-shadow-form);
 }
 .indicate-container {
   width: 458px;
@@ -368,8 +367,10 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  color: var( --second-basic);
 }
 .indicate-item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -388,17 +389,15 @@ input[type="text"]::placeholder {
 .indicate-item-link {
   position: absolute;
   display: block;
-  top: 62px;
-  right: 64px;
-}
-.indicate-link {
-  top: 129px;
+  top: 6px;
+  right: 8px;
 }
 .button.button-find {
   margin-top: 26px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 .indicate-date {
+  position: relative;
   background: var(--peripheral-additional-accent);
   border: none;
   width: 346px;
@@ -440,10 +439,13 @@ input[type="text"]::placeholder {
   fill: var(--accent);
 }
 .button.indicate-close {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  width: 568px;
   margin: 0;
   padding-top: 31px;
   padding-bottom: 31px;
@@ -457,20 +459,29 @@ input[type="text"]::placeholder {
   vertical-align: middle;
 }
 .button-plus-right {
-  top: 199px;
-  right: 60px;
+  top: 11px;
+  right: 3px;
 }
 .button-plus-left {
-  top: 199px;
-  left: 245px;
+  top: 11px;
+  left: 192px;
 }
 .button-minus-right {
-  top: 196px;
-  right: 135px;
+  top: 7px;
+  right: 81px;
 }
 .button-minus-left {
-  top: 196px;
-  left: 170px;
+  top: 7px;
+  left: 115px;
+}
+.indicate-form-open {
+  transition: transform 1s ease;
+  transform: translateY(0);
+  overflow: hidden
+}
+.indicate-form-close {
+  transform: translateY(-100%);
+  overflow: hidden;
 }
 
 /* Map */
@@ -478,6 +489,7 @@ input[type="text"]::placeholder {
 .map {
   width: 1199px;
   height: 594px;
+  border: none;
   background: var(--accent) url(../img/background/map.png) no-repeat 0 0;
 }
 
@@ -486,6 +498,7 @@ input[type="text"]::placeholder {
 /* Flex */
 
 .main-footer {
+  position: relative;
   margin-top: -120px;
   color: var( --second-basic);
   background: var(--opacity-background);
@@ -551,7 +564,6 @@ input[type="text"]::placeholder {
 /* Selection */
 
 /* Grig */
-
 
 .selection {
   margin: 0;

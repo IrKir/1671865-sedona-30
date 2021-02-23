@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:wght@400;700&;display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="main-container">
@@ -90,12 +90,12 @@
           <p class="offer-indicate">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <section class="indicate">
             <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-            <a class="button indicate-close" href="#" aria-label="Закрыть/открыть форму выбора гостиницы">Поиск гостиницы в Седоне</a>
-            <form action="https://echo.htmlacademy.ru/" method="post" class="indicate-form">
+            <button class="button indicate-close btn" aria-label="Закрыть/открыть форму выбора гостиницы">Поиск гостиницы в Седоне</button>
+            <form action="https://echo.htmlacademy.ru/" method="post" class="indicate-form indicate-form-open">
               <div class="indicate-container">
                 <p class="indicate-item">
                   <label for="indicate-arrival-date">Дата заезда:</label>
-                  <input id="indicate-arrival-date" type="text" name="calendar" placeholder="24 апреля 2017" class="indicate-date">
+                  <input id="indicate-arrival-date" type="text" name="indicate-arrival-date" placeholder="24 апреля 2017" class="indicate-date">
                   <a href="#" class="indicate-item-link" aria-label="Календарь">
                     <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
@@ -104,8 +104,8 @@
                   </a>
                 </p>
                 <p class="indicate-item">
-                  <label for="indicate-departure-date">Дата выъезда</label>
-                  <input id="indicate-departure-date" type="text" name="calendar" placeholder="4 июля 2017" class="indicate-date">
+                  <label for="indicate-departure-date">Дата выезда</label>
+                  <input id="indicate-departure-date" type="text" name="indicate-departure-date" placeholder="4 июля 2017" class="indicate-date">
                   <a href="#" class="indicate-item-link indicate-link" aria-label="Календарь">
                     <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
@@ -146,6 +146,7 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта с меткой расположения Седоны</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35986.35847834045!2d-111.80996998356522!3d34.85676614236957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da14b79c7a2b5%3A0xf42cf16ec607e7da!2z0K3QudGA0L_QvtGA0YIg0JzQtdGB0LA!5e0!3m2!1sru!2skz!4v1613915780853!5m2!1sru!2skz" allowfullscreen width="1199" height="594" class="map"></iframe>
         </section>
       </main>
       <footer class="main-footer">
@@ -192,5 +193,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
