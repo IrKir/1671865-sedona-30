@@ -333,19 +333,21 @@ img {
   grid-row: 1 / 2;
 }
 .description-header {
+  width: 150px;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-top: 47px;
   margin-bottom: 26px;
 }
 .description-item-text {
+  width: 301px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 auto;;
   padding: 0;
   margin-top: 23px;
   margin-bottom: 54px;
@@ -354,7 +356,7 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-top: 28px;
   margin-bottom: 26px;
@@ -366,6 +368,9 @@ img {
   line-height: 21px;
   margin-bottom: 82px;
   color: var(--third-basic);
+}
+.description-text-advantages {
+  width: 260px;
 }
 .description-header-advantages {
   color: var(--second-basic);
@@ -487,35 +492,35 @@ img {
   padding: 0;
   padding-bottom: 29px;
 }
-input[type="text"]::-webkit-input-placeholder {
+.indicate-form input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--second-basic);
 }
-input[type="text"]::-moz-placeholder {
+.indicate-form input::-moz-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--second-basic);
 }
-input[type="text"]:-ms-input-placeholder {
+.indicate-form input::-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--second-basic);
 }
-input[type="text"]::-ms-input-placeholder {
+.indicate-form input::-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--second-basic);
 }
-input[type="text"]::placeholder {
+.indicate-form input::placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -616,7 +621,7 @@ input[type="text"]::placeholder {
   top: 7px;
   left: 115px;
 }
-.indicate-form-open {
+.indicate-form-close {
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   -o-transition: transform 1s ease;
@@ -627,7 +632,7 @@ input[type="text"]::placeholder {
           transform: translateY(0);
   overflow: hidden
 }
-.indicate-form-close {
+.indicate-form-open {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);

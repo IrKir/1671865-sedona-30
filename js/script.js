@@ -12,6 +12,10 @@ let indicateKids = form.querySelector('[name=number-kids]');
 
 let isStorageSupport = true;
 
+button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+});
+
 button.onclick = function() {
   form.classList.toggle('indicate-form-open');
   form.classList.toggle('indicate-form-close');
