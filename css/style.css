@@ -370,7 +370,7 @@ img {
   color: var(--third-basic);
 }
 .description-text-advantages {
-  width: 260px;
+  width: 261px;
 }
 .description-header-advantages {
   color: var(--second-basic);
@@ -419,10 +419,12 @@ img {
   line-height: 24px;
 }
 .offer-interest {
+  width: 297px;
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  margin-top: 56px;
+  margin-left: 446px;
+  margin-top: 57px;
   margin-bottom: 36px;
   color: var(--second-basic);
 }
@@ -530,8 +532,8 @@ img {
 .indicate-item-link {
   position: absolute;
   display: block;
-  top: 6px;
-  right: 8px;
+  top: 7px;
+  right: 9px;
 }
 .button.button-find {
   margin-top: 26px;
@@ -558,6 +560,12 @@ img {
   outline: none;
   font-weight: bold;
   background: var(--peripheral-additional-accent);
+}
+.label-kids {
+  margin-right: -23px;
+}
+.label-adult {
+  margin-right: -12px;
 }
 
 .indicate-form input:hover {
@@ -606,19 +614,19 @@ img {
   vertical-align: middle;
 }
 .button-plus-right {
-  top: 11px;
-  right: 3px;
+  top: 13px;
+  right: 5px;
 }
 .button-plus-left {
-  top: 11px;
-  left: 192px;
+  top: 13px;
+  left: 189px;
 }
 .button-minus-right {
-  top: 7px;
+  top: 8px;
   right: 81px;
 }
 .button-minus-left {
-  top: 7px;
+  top: 8px;
   left: 115px;
 }
 .indicate-form-close {
@@ -736,9 +744,12 @@ img {
           align-items: center;
 }
 .footer-copyright a {
-  margin-left: 5px;
+  margin-left: 9px;
 }
-
+.phone {
+  margin-left:-5px;
+  padding-top: 20px;
+}
 /*==============================================================*/
 
 /* Catalog */
@@ -866,6 +877,9 @@ img {
 .selection-option:last-child {
   padding-bottom: 0;
 }
+.selection-label {
+  padding-left: 3px;
+}
 .filter-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -912,8 +926,7 @@ img {
 }
 .range-controls {
   position: relative;
-  margin-top: 12px;
-  margin-left: 4px;
+  margin-top: 10px;
   padding-top: 9px;
 }
 .range-controls .scale {
@@ -921,7 +934,7 @@ img {
   background: var(--opacity-basic);
 }
 .range-controls .bar {
-  width: 248px;
+  width: 253px;
   height: 2px;
   background: var(--basic-main);
 }
@@ -938,11 +951,8 @@ img {
   -webkit-box-shadow: 0 2px 0 0 var(--petty-bullshit-opacity);
           box-shadow: 0 2px 0 0 var(--petty-bullshit-opacity);
 }
-.range-controls .toggle-min {
-  left: 0px;
-}
 .range-controls .toggle-max {
-  left: 245px;
+  left: 253px;
 }
 .toggle:hover {
   -webkit-transform: scale(1.2);
@@ -950,25 +960,32 @@ img {
           transform: scale(1.2);
 }
 .price-controls {
-  text-align: center;
-  border: 2px solid var(--basic-main);
-}
-.price-controls input {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: inherit;
   font-size: inherit;
-  width: 40px;
-  margin: 6px 0;
+  border: 2px solid var(--basic-main);
+
+}
+.price-controls input {
+  width: 40%;
+  margin: 7px 0;
   background: none;
   border: none;
+  padding-right: 29px;
+  border-right: 2px solid var(--basic-main);
   color: var(--basic-main);
 }
-.min-prise input {
-  padding-right: 30px;
-  border-right: 2px solid var(--basic-main);
+.max-price input {
+  border: none;
 }
-.max-price  {
-  padding-left: 50px;
+.min-price {
+  padding-left: 65px;
+}
+.max-price {
+  padding-left: 46px;
 }
 
 /* Sorting  */
@@ -995,6 +1012,7 @@ img {
   line-height: 18px;
   color: var(--second-basic);
   margin-right: 40px;
+  margin-top: 5px;
 }
 .sorting ul {
   margin: 0;
@@ -1013,9 +1031,17 @@ img {
   font-size: 12px;
   line-height: 18px;
 }
+.sorting-list li {
+  margin-top: -3px;
+}
 .sorting-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 34px;
   margin-left: auto;
-  margin-right: 72px;
+  margin-right: 74px;
 }
 .sorting-link {
   margin-right: 32px;
@@ -1139,8 +1165,8 @@ img {
           align-items: flex-end;
   width: 110px;
   margin-left: auto;
-  margin-top: 26px;
-  margin-bottom: 33px;
+  margin-top: 28px;
+  margin-bottom: 30px;
   padding: 0;
 }
 .result-star {
@@ -1149,13 +1175,13 @@ img {
   background-repeat: space;
 }
 .star-hotel {
-  width: 90px;
+  width: 92px;
 }
 .star-motel {
-  width: 63px;
+  width: 66px;
 }
 .star-apartments {
-  width: 40px;
+  width: 43px;
 }
 .result-rating {
   display: -webkit-box;
@@ -1171,7 +1197,6 @@ img {
           align-items: center;
   width: 110px;
   padding: 4px 0;
-
   color: var(--peripheral-basic);
   background: var(--peripheral-additional-accent);
 }
@@ -1224,6 +1249,7 @@ img {
 .button-selection {
   width: 137px;
   padding: 8px 0;
+  margin-left: -12px;
   text-align: center;
   font-size: inherit;
   font-weight: normal;
