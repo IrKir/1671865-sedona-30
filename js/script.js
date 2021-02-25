@@ -12,13 +12,13 @@ let indicateKids = form.querySelector('[name=number-kids]');
 
 let isStorageSupport = true;
 
-button.addEventListener("click", function (evt) {
+button.addEventListener('click', function (evt) {
   evt.preventDefault();
 });
 
 button.onclick = function() {
-  form.classList.toggle('indicate-form-open');
   form.classList.toggle('indicate-form-close');
+  form.classList.toggle('indicate-form-open');
 }
 
 try {
@@ -26,13 +26,14 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
+
 try {
   storageKids = localStorage.getItem('kids');
 } catch (err) {
   isStorageSupport = false;
 }
 
-form.addEventListener("submit", function (evt) {
+form.addEventListener('submit', function (evt) {
     if (!indicateArrDate.value || !indicateDepDate.value || !indicateAdult.value) {
     evt.preventDefault();
     console.log('Введите данные');

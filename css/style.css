@@ -7,23 +7,18 @@
 /* Variables */
 
 :root {
-
   --basic-main: #ffffff;
-
   --second-basic: #000000;
   --third-basic: #333333;
   --opacity-basic: rgba(255, 255, 255, .3);
   --opacity-additional: rgba(0, 0, 0, .3);
-
   --accent: #81B3D2;
   --accent-additional-tone: #669EC0;
   --accent-enhanced-tone: #5496BD;
   --accent-neutral: #EEEEEE;
-
   --additional-accent: #766357;
   --additional-accent-dark: #604E43;
   --additional-accent-extra: #503E33;
-
   --peripheral-basic: #666666;
   --peripheral-accent: #EBEBEB;
   --peripheral-additional-accent: #F2F2F2;
@@ -31,11 +26,9 @@
   --petty-bullshit: #ABABAB;
   --petty-bullshit-opacity: rgba(171, 171, 171, 0.3);
   --peripheral: #E5E5E5;
-
   --disabled-block: #6A6A6A;
   --logo-rest: #231F20;
   --logo-push: #BDBBBC;
-
   --box-shadow-main: rgba(0, 1, 1, .2);
   --box-shadow-form:  rgba(0, 1, 1, .15);
   --opacity-background: rgba(255, 255, 255, 0.9);
@@ -70,7 +63,7 @@
   grid-template-rows: min-content 1fr min-content;
   -ms-flex-line-pack: start;
       align-content: start;
-  background: #FFFFFF;
+  background: var(--basic-main);
   -webkit-box-shadow: 0px 5px 15px var(--box-shadow-main);
           box-shadow: 0px 5px 15px var(--box-shadow-main);
 }
@@ -250,67 +243,40 @@ img {
   padding: 0;
   gap: 0;
 }
-
 .description-section > *:nth-child(1) {
-
   -ms-grid-row: 1;
-
   -ms-grid-column: 1;
 }
-
 .description-section > *:nth-child(2) {
-
   -ms-grid-row: 1;
-
   -ms-grid-column: 3;
 }
-
 .description-section > *:nth-child(3) {
-
   -ms-grid-row: 1;
-
   -ms-grid-column: 5;
 }
-
 .description-section > *:nth-child(4) {
-
   -ms-grid-row: 3;
-
   -ms-grid-column: 1;
 }
-
 .description-section > *:nth-child(5) {
-
   -ms-grid-row: 3;
-
   -ms-grid-column: 3;
 }
-
 .description-section > *:nth-child(6) {
-
   -ms-grid-row: 3;
-
   -ms-grid-column: 5;
 }
-
 .description-section > *:nth-child(7) {
-
   -ms-grid-row: 5;
-
   -ms-grid-column: 1;
 }
-
 .description-section > *:nth-child(8) {
-
   -ms-grid-row: 5;
-
   -ms-grid-column: 3;
 }
-
 .description-section > *:nth-child(9) {
-
   -ms-grid-row: 5;
-
   -ms-grid-column: 5;
 }
 .description-item {
@@ -333,7 +299,7 @@ img {
   grid-row: 1 / 2;
 }
 .description-header {
-  width: 150px;
+  width: 151px;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
@@ -343,13 +309,13 @@ img {
   margin-bottom: 26px;
 }
 .description-item-text {
-  width: 301px;
+  width: 303px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   margin: 0 auto;;
   padding: 0;
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 54px;
 }
 .description-header-interest {
@@ -423,16 +389,16 @@ img {
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  margin-left: 446px;
+  margin: 0 auto;
   margin-top: 57px;
-  margin-bottom: 36px;
   color: var(--second-basic);
 }
 .offer-indicate {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 128px;
+  margin-top: 32px;
+  margin-bottom: 130px;
 }
 
 /* Form */
@@ -440,7 +406,7 @@ img {
 .indicate {
   position: absolute;
   width: 568px;
-  top: 150px;
+  top: 148px;
   left: 50%;
   margin: 0;
   padding: 0;
@@ -507,6 +473,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--second-basic);
+  opacity: 1;
 }
 .indicate-form input::-ms-input-placeholder {
   font-size: 14px;
@@ -567,14 +534,13 @@ img {
 .label-adult {
   margin-right: -12px;
 }
-
 .indicate-form input:hover {
   background: var(--peripheral-accent);
 }
 .indicate-form input:focus {
   background: var(--basic-main);
   outline: 2px solid var(--peripheral);
-  color: var(--opacity-basic);
+  color: var(--second-basic);
 }
 .indicate-item-color:hover,
 .indicate-item-color:focus,
@@ -614,11 +580,11 @@ img {
   vertical-align: middle;
 }
 .button-plus-right {
-  top: 13px;
+  top: 11px;
   right: 5px;
 }
 .button-plus-left {
-  top: 13px;
+  top: 11px;
   left: 189px;
 }
 .button-minus-right {
@@ -629,7 +595,7 @@ img {
   top: 8px;
   left: 115px;
 }
-.indicate-form-close {
+.indicate-form-open {
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   -o-transition: transform 1s ease;
@@ -640,7 +606,7 @@ img {
           transform: translateY(0);
   overflow: hidden
 }
-.indicate-form-open {
+.indicate-form-close {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -747,7 +713,6 @@ img {
   margin-left: 9px;
 }
 .phone {
-  margin-left:-5px;
   padding-top: 20px;
 }
 /*==============================================================*/
@@ -926,7 +891,7 @@ img {
 }
 .range-controls {
   position: relative;
-  margin-top: 10px;
+  margin-top: 11px;
   padding-top: 9px;
 }
 .range-controls .scale {
@@ -967,7 +932,6 @@ img {
   font-family: inherit;
   font-size: inherit;
   border: 2px solid var(--basic-main);
-
 }
 .price-controls input {
   width: 40%;
@@ -1135,6 +1099,7 @@ img {
   width: 116px;
 }
 .result-buttons a {
+
   margin-top: 15px;
 }
 .result-buttons {
@@ -1281,9 +1246,11 @@ img {
   font-size: 14px;
   line-height: 27px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--basic-main);
 }
 .button-detail {
+  text-align: center;
   background: var(--accent);
 }
 .button-reservation {
