@@ -383,13 +383,13 @@ img {
   position: relative;
   text-align: center;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 .offer-interest {
-  width: 297px;
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  margin: 0 auto;
   margin-top: 57px;
   color: var(--second-basic);
 }
